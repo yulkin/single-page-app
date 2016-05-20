@@ -1,0 +1,21 @@
+h1 {
+	margin-bottom: 30px;
+}
+th {
+	color:#337ab7;
+}
+th:hover {
+	text-decoration: underline;
+	cursor:pointer;
+	color:#23527c;
+}
+
+form .ng-valid.ng-dirty {
+	border: 1px solid #0F9;
+}
+form .ng-invalid.ng-dirty {
+	border: 1px solid #F00;
+}
+form .error {
+	color: #F00;
+}
