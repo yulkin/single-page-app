@@ -1,0 +1,23 @@
+[
+	{
+		"firstName" : "Mark",
+		"lastName" : "Koval",
+		"phone" : "380507777777",
+		"gender" : "male",
+		"age" : "30"
+	},
+	{
+		"firstName" : "Ann",
+		"lastName" : "Petrova",
+		"phone" : "380507778877",
+		"gender" : "female",
+		"age" : "27"
+	},
+	{
+		"firstName" : "Alex",
+		"lastName" : "Mash",
+		"phone" : "380507777557",
+		"gender" : "male",
+		"age" : "37"
+	}
+]

@@ -1,30 +1,10 @@
 //'use strict'
 angular.module("singlePageApp", [])
 
-.controller("SinglePageCtrl", function ($scope){
-	$scope.people = [
-	{
-		firstName : "Mark",
-		lastName : "Koval",
-		phone : "380507777777",
-		gender : "male",
-		age : "30"
-	},
-	{
-		firstName : "Ann",
-		lastName : "Petrova",
-		phone : "380507778877",
-		gender : "female",
-		age : "27"
-	},
-	{
-		firstName : "Alex",
-		lastName : "Mash",
-		phone : "380507777557",
-		gender : "male",
-		age : "37"
-	}
-	];	
+.controller("SinglePageCtrl", function ($scope, $http){
+	$http.get("js/people.json").success(function(data, status, headers, config){
+		$scope.people = data;
+	});	
 	
 	$scope.sortField = undefined;
 	$scope.reverse = false;
